@@ -76,8 +76,8 @@ one line.
 
 ## Location and schedule notes (optional)
 
-If your constraints include a commute limit or a cap on office days, write them here so the
-screen applies them. Two habits help:
+If your constraints include a commute limit or a cap on office days (see the constraint
+categories in `application_log_template.md`), write them here so the screen applies them. Two habits help:
 
 - Treat a stated office schedule above your cap as a location PASS.
 - If the schedule is not stated, label the posting "cadence unconfirmed." Do not pass it
