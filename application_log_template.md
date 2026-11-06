@@ -34,37 +34,23 @@ helping you evaluate a posting at 11pm.
 
 ### More constraint categories worth deciding explicitly
 
-Decide each of these before you evaluate a single posting. Write "none" if one does not apply
-to you. A constraint left blank gets applied inconsistently, usually in whichever direction
-feels best at 11pm.
+Decide each of these before you evaluate a single posting. Write "none" if one does not apply to
+you. A constraint left blank gets applied inconsistently, usually in whichever direction feels
+best at 11pm.
 
-- **Pay floor:** [your minimum base salary, and how to read a posted range. For example: judge a
-  role by the top of its range, not the midpoint, or by base pay only. Say what to do when pay
-  is not posted.]
-- **Pay tiers:** [if you want roles ranked, say how: for example, tier 1 at or above [number],
-  tier 2 between [number] and [number]. Say how contract rates convert to a yearly figure.]
-- **Role type:** [individual contributor, manager, or both. If you would take a well-paid
-  individual-contributor role over a lower-paid management one, say so, so the agent does not
-  filter on the word "manager."]
-- **Remote requirement:** [fully remote only, remote or hybrid, any. State whether this is a
-  hard filter or a preference.]
-- **Commute limit:** [for anything not fully remote, the farthest you will go, written as places
-  (name the cities that are in range and the first ones that are not), not as a vague radius.]
-- **Office-day cap:** [the most days a week you will be on site. Decide how to treat a posting
-  that does not state its schedule. A good default is to label it "cadence unconfirmed" and
-  report it, not to pass or reject it silently.]
-- **Health, accessibility or caregiving constraints:** [optional. If you have a real need that
-  limits commuting, schedule or travel, write it as a hard filter with one line on why, so the
-  agent treats it as non-negotiable. You do not need to share details, and you should keep
-  anything private out of a public copy of this file.]
-- **Schedule, time zone and travel:** [working hours you need, time zones you can cover, and
-  the amount of travel you accept.]
-- **Authorization and sponsorship:** [work authorization, relocation, or visa requirements that
-  rule roles in or out.]
-- **Process authority:** [do you want license to design how the work is done, or are you fine
-  executing a defined process? See `body_text_signals_template.md`.]
-- **Work you enjoy:** [the specific activities you want more of. Ask the agent to note which of
-  them each role offers, so you can compare roles on more than title and pay.]
+| Category | What to decide | Your answer |
+|---|---|---|
+| Pay floor | Your minimum base salary, and how to read a posted range (top of range, midpoint, base only). What to do when pay is not posted. | [  ] |
+| Pay tiers | How to rank roles by pay, for example tier 1 at or above one number and tier 2 between two. How contract rates convert to a yearly figure. | [  ] |
+| Role type | Individual contributor, manager, or both. Whether you would take a well-paid individual-contributor role over a lower-paid management one. | [  ] |
+| Remote requirement | Fully remote only, remote or hybrid, or any. Whether it is a hard filter or a preference. | [  ] |
+| Commute limit | For roles that are not fully remote, the farthest you will go, written as named places, not a vague radius. | [  ] |
+| Office-day cap | The most days a week you will be on site. Default for an unstated schedule: label it "cadence unconfirmed" and report it. | [  ] |
+| Health, accessibility or caregiving | Optional. Any real need that limits commuting, schedule or travel, written as a hard filter with one line on why. Keep private details out of a public copy. | [  ] |
+| Schedule, time zone, travel | Hours you need, time zones you can cover, how much travel you accept. | [  ] |
+| Authorization and sponsorship | Work authorization, relocation or visa requirements that rule roles in or out. | [  ] |
+| Process authority | Whether you want license to design how the work is done, or are fine executing a defined process. See `body_text_signals_template.md`. | [  ] |
+| Work you enjoy | The specific activities you want more of, so the agent can note which ones each role offers. | [  ] |
 
 ---
 

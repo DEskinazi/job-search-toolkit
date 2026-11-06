@@ -11,6 +11,16 @@ All results go through the same screens as everything else: hard filters first, 
 body-text screen. Report candidates under a heading such as "Title-miss, body-match," and name
 the lane that found each one. Skip roles already in your log.
 
+## Lanes at a glance
+
+| Lane | What it searches | Method | How often |
+|---|---|---|---|
+| 9a | Employers on a full-text-search applicant-tracking system (example: Workday) | POST a search phrase, then read each posting's detail page | Every full run |
+| 9b | Employers on another public job API (example: SmartRecruiters) | GET with a phrase, then read the posting detail | Every full run |
+| 9c | A monthly hiring thread (example: Hacker News "Who is hiring") | Search the thread's comments by phrase | Once a month, first ten days |
+| 9d | Adjacent titles and fields | Title and body searches, with a pay test and a process-authority test | Every full run |
+| 9e | A third tier, plus hosted boards you have not scanned (Ashby, Lever) | Board APIs and your own slug lists | Every full run |
+
 ## 9a. Applicant-tracking systems whose search covers the full posting text
 
 Some systems search the whole posting, not only the title. Workday is one. A search for a

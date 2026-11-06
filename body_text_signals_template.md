@@ -38,41 +38,33 @@ acronym must appear as its own uppercase word.
    drive it.
 7. For a title match whose body shows red flags, say so and downgrade it.
 
-## Strong phrases (the work you want to own)
+## Your phrase lists
 
-[List 8 to 12. Example for a knowledge-management field: content governance, content lifecycle,
-content ownership, taxonomy, metadata standards, single source of truth, stale content.
-Example for a fleet-telematics field: route optimization, vehicle diagnostics, telematics data,
-geofencing.]
-
-## Supporting phrases
-
-[List 6 to 10: tools you use, processes that surround the work, kinds of collaboration.]
+| List | What belongs in it | How many | Your phrases |
+|---|---|---|---|
+| Strong | The work you want to own. Example for knowledge management: content governance, content lifecycle, taxonomy, single source of truth. Example for fleet telematics: route optimization, vehicle diagnostics, geofencing. | 8 to 12 | [  ] |
+| Supporting | Tools you use, processes around the work, kinds of collaboration. | 6 to 10 | [  ] |
 
 ## Red flags
 
 Group them so you can see why each one is there.
 
-- **Work in the wrong family** (example: marketing campaigns when you want operations).
-- **The wrong main activity** (example: training programs when you want systems work).
-- **Requirements you do not meet.** Be honest. If a posting makes a skill the core of the job
-  and you lack it, that is a PASS, not a stretch.
-- **Domain expertise you cannot fake** (regulated fields, specialized equipment, clinical work).
-- **Level and authority mismatches** (managing managers, executive presence required, years of
-  experience in a domain you lack).
+| Category | What it looks like | Your phrases |
+|---|---|---|
+| Work in the wrong family | Marketing campaigns when you want operations. | [  ] |
+| The wrong main activity | Training programs when you want systems work. | [  ] |
+| Requirements you do not meet | A skill that is the core of the job and that you lack. That is a PASS, not a stretch. | [  ] |
+| Domain expertise you cannot fake | Regulated fields, specialized equipment, clinical work. | [  ] |
+| Level and authority mismatch | Managing managers, executive presence required, years in a domain you lack. | [  ] |
 
 ## Process authority (optional, but it catches a lot)
 
 If you want license over how the work is done, look for evidence in the body.
 
-Green phrases: "design the process," "build from scratch," "first hire," "greenfield," "stand
-up," "define standards," "own the framework," "own the roadmap."
-
-Red phrases: "execute the playbook," "follow established processes," "support the team's,"
-"work the ticket queue," "administer," "carry out the strategy set by."
-
-A posting that matches your field but shows only red process phrases is a downgrade. Say why in
-one line.
+| Signal | Example phrases | Effect |
+|---|---|---|
+| Green | "design the process," "build from scratch," "first hire," "greenfield," "stand up," "define standards," "own the framework," "own the roadmap" | Supports a match |
+| Red | "execute the playbook," "follow established processes," "support the team's," "work the ticket queue," "administer," "carry out the strategy set by" | A posting that matches your field but shows only red phrases is a downgrade. Say why in one line. |
 
 ## Location and schedule notes (optional)
 

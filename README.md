@@ -3,6 +3,26 @@
 Template files, plus two optional Claude Code Skills, for job-searching with an LLM without it
 overclaiming, underclaiming, or quietly drifting away from what's actually true about your career.
 
+## Quick start
+
+The shortest path from nothing to a useful result. Steps 1 to 3 take real time (step 1 most of
+all). Step 4 takes minutes.
+
+1. **Get the files.** Clone this repo or download it, and copy the templates you need into a
+   working folder.
+2. **Write down your real career facts.** Gather every resume version you have, then fill in
+   `career_context_template.md` from them. Read the instructions at the top of the file first.
+3. **Write down your real search constraints.** Fill in the constraint categories in
+   `application_log_template.md`: pay floor, location, schedule, and the rest.
+4. **Try it on one posting.** Give your LLM both files plus a job posting, and ask it to tier the
+   role (GOOD, STRETCH or PASS) and say which requirements you meet, which are a real stretch, and
+   which are gaps. Do not let it write anything your career file does not support.
+5. **Fix errors where they live.** When a draft gets a fact wrong, correct it in
+   `career_context_template.md` right away, so the same mistake does not return next time.
+
+That is the whole core toolkit. Everything else is optional: Claude Code skills, a scheduled
+sweep agent, the body-text layer, and notification delivery. See the table below.
+
 ## The problem this solves
 
 Ask an LLM to write you a resume bullet, and it will happily generate something plausible,
@@ -19,28 +39,18 @@ together.
 
 ## What's in here
 
-- **`career_context_template.md`** — a structured file for your actual career facts: identity,
-  work history, scope boundaries (what you do vs. what merely sounds like what you do), detailed
-  accomplishment write-ups, a framework for handling job-posting requirements that look unmet but
-  might not be, and a language glossary so every generated document uses consistent, accurate
-  verbs. Read the setup instructions at the top of the file before filling it in — the most
-  important step is feeding an LLM *every* old resume version you have, not just your current
-  one, so nothing gets lost in the reconciliation.
-- **`application_log_template.md`** — a log for tracking and comparing opportunities against each
-  other: your real constraints (comp anchor, runway, non-negotiables), a reusable
-  GOOD/STRETCH/PASS evaluation framework with hard filters that never flex regardless of time
-  pressure, and a phase-based structure for deciding, on purpose, when to widen your criteria as
-  a timeline compresses — instead of that happening unconsciously as pressure builds.
-- **`body_text_signals_template.md`**, **`search_lanes_template.md`** and
-  **`sweep_changelog_template.md`** — the body-text layer for the sweep. Titles in most fields are
-  unreliable, so these files tell the agent which phrases to look for inside a posting (and which
-  red flags to downgrade for), how to search posting text on boards where that is possible, and
-  how to keep a changelog of why the search methods changed. Optional, but this is where most of
-  the real matches turned up once the title scan stopped finding new ones.
-- **`job_sweep_agent_template.md`** — a prompt template for a scheduled agent that reads the
-  other two files and checks job boards for you on a recurring basis, applying your evaluation
-  framework consistently instead of you re-deciding it under pressure at 11pm. Includes guidance
-  on avoiding scope creep as you widen what it searches for over time.
+| File | What it is | Needed? |
+|---|---|---|
+| `career_context_template.md` | The source of truth for your career facts: identity, work history, scope boundaries, accomplishment write-ups, how to handle requirements that look unmet, and a glossary so generated documents use accurate verbs. | Core |
+| `application_log_template.md` | Your search constraints, a GOOD / STRETCH / PASS framework with hard filters, and a log for comparing opportunities. | Core |
+| `job_sweep_agent_template.md` | A prompt for a scheduled agent that reads the two files above and checks job boards on a recurring basis. | Optional |
+| `body_text_signals_template.md` | The phrases and red flags that tell your sweep what a posting is really about, so it reads bodies and not only titles. | Optional, with the sweep |
+| `search_lanes_template.md` | Methods for searching posting text directly, and for handling boards that return titles only. | Optional, with the sweep |
+| `sweep_changelog_template.md` | A format for recording why your search methods changed, with examples. | Optional, with the sweep |
+| `skills/job-fit-analysis/` | A Claude Code skill: fetch the real posting, check it against your facts, give an honest tier. | Optional, Claude Code |
+| `skills/interview-prep-builder/` | A Claude Code skill: build interview questions and talking points from your career file. | Optional, Claude Code |
+
+Read the setup instructions at the top of each template before you fill it in.
 
 ## Optional: Claude Code Skills
 

@@ -4,11 +4,12 @@ Keep a changelog for how your sweep searches, not only for what it finds. When a
 off weeks later, you want to know what changed and why. Newest entries first. Each entry has
 four parts:
 
-- **What changed.** The file or prompt paragraph, in one or two sentences.
-- **Why.** The specific miss or false hit that prompted it. Use real examples.
-- **How it was checked.** For a prompt change: the stored text matched the intended text, the
-  sweep's repo source was attached, and a test run ran. Say what the test did not cover.
-- **Lesson.** One sentence you would give your past self.
+| Part | What to write |
+|---|---|
+| What changed | The file or prompt paragraph, in one or two sentences. |
+| Why | The specific miss or false hit that prompted it. Use real examples. |
+| How it was checked | For a prompt change: the stored text matched the intended text, the sweep's repo source was attached, and a test run ran. Say what the test did not cover. |
+| Lesson | One sentence you would give your past self. |
 
 ## Example entries (from a real sweep, with specifics removed)
 
