@@ -20,15 +20,22 @@ else depends on. Expect an hour or two.
 
 1. **Get the files.** Clone this repo or download it. You need two files to start:
    `career_context_template.md` and `application_log_template.md`.
-2. **Build your career file with your LLM.** Paste all your resume versions into a chat and use
-   this prompt:
+2. **Gather everything you have written about your work into one folder, then build your career
+   file from it.** Do not start from a blank page. Put in every resume version, every cover
+   letter, your LinkedIn export, performance reviews, and project write-ups. Cover letters count:
+   they show your voice. Old documents are evidence, not truth, because they often overclaim and
+   disagree with each other, so the prompt below makes you confirm every claim. If you use a
+   chat, paste the files in. If you use a tool that can read a folder, point it at the folder.
 
    ```
    I am job searching and want a source-of-truth file about my career, so that nothing you
-   write for me overclaims. Below are all my resume versions and notes. Draft my career file
-   using the structure in career_context_template.md. Then go through every accomplishment
-   claim one at a time: show me the claim, say where it came from, and ask me to confirm it,
-   correct it, or cut it. Do not add anything I have not confirmed.
+   write for me overclaims. The folder (or text below) holds all my resumes, cover letters and
+   notes. Draft my career file using the structure in career_context_template.md. Then do two
+   things. First, go through every accomplishment claim one at a time: show me the claim, say
+   which documents it came from, point out where versions disagree, and ask me to confirm it,
+   correct it, or cut it. Do not add anything I have not confirmed. Second, read my cover
+   letters and write a short note describing how I write: sentence length, tone, and words I
+   avoid.
    ```
 
    Save the result as your own `career_context.md`.

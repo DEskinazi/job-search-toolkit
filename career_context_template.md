@@ -13,14 +13,17 @@ Fill in every `[bracketed]` section. Delete this instructions block once you've 
 
 ## HOW TO SET THIS UP (read once, then delete)
 
-1. **Gather every resume version you have** — not just your current one. Old resumes,
-   LinkedIn exports, a rough draft you never sent, a version from a few roles back. This isn't
-   just about catching stale or duplicate facts: a resume written for a different target
-   function or role often describes the *same* underlying work through a genuinely different
-   lens — what got emphasized, what use case it was framed around, which skill it was made to
-   showcase. Those alternate framings are useful raw material, not noise, even from roles that
-   feel dated. Give all versions to the LLM in one sitting and ask it to extract every distinct
-   claim, achievement, framing, and number across all of them into a single list.
+1. **Do not start from a blank page. Gather everything you have written about your work into
+   one folder.** Every resume version (not just the current one), every cover letter, LinkedIn
+   exports, performance reviews, project write-ups, and the job descriptions for roles you held.
+   Old resumes catch stale or duplicate facts, and a resume written for a different target role
+   often describes the *same* underlying work through a genuinely different lens. Those
+   alternate framings are useful raw material, even from roles that feel dated. Cover letters
+   matter just as much: they show your voice, and they hold context that never fit on a resume.
+   Give the whole folder to the LLM in one sitting and ask it to extract every distinct claim,
+   achievement, framing and number into a single list, and to describe how you write. **Treat
+   old documents as evidence, not as truth.** They often contain overclaims, and versions
+   disagree with each other. That is what step 2 is for.
 2. **Reconcile that list with yourself, not with the LLM.** For each claim: is it still true, is
    it worded accurately, is the number right, did you actually own that work or just touch it?
    The LLM cannot verify these — only you can. This step is slow and that's the point.
@@ -187,3 +190,5 @@ word choice every time. Example shape (replace with your own):
 [Anything true across every document generated from this file — e.g., "no em dashes," "avoid
 [specific clichés]," "keep paragraphs under N sentences," "always use [specific font]." Small
 things, but repeating them here means you only have to say them once.]
+
+*(Tip: your own cover letters are the best source for these. Ask the LLM to read them and describe your sentence length, tone, and the words you avoid, then edit that description until it sounds like you.)*
