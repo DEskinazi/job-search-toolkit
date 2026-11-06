@@ -4,6 +4,15 @@ Template files for job-searching with an LLM without it overclaiming, underclaim
 away from what is actually true about your career. Everything here works with any LLM chat. Two
 optional Claude Code skills are included.
 
+## Why this exists
+
+Ask an LLM to write you a resume bullet and it will give you something plausible, polished, and
+occasionally wrong. It cannot tell "what you mentioned once, loosely" from "what is actually
+verified true," so it overclaims, underclaims, or drifts across five tailored versions of the
+same resume. The fix is not a smarter prompt. It is one source-of-truth file you maintain on
+purpose, plus a separate log for judging opportunities against it.
+[Read the full reasoning.](docs/why-it-works.md)
+
 ## Quick start
 
 Do these in order. The first two steps take real time, because they are the part everything
@@ -49,7 +58,8 @@ That is the whole core toolkit.
 ## Go further
 
 See [`docs/optional-extras.md`](docs/optional-extras.md) for installing the Claude Code skills,
-the full step-by-step path to a scheduled sweep, and notification delivery.
+the order for adding a scheduled sweep, and notification delivery. See
+[`docs/why-it-works.md`](docs/why-it-works.md) for the reasoning behind the design.
 
 ## License
 
