@@ -4,9 +4,12 @@ You do not need anything on this page to get value from the toolkit. The core is
 
 ## Claude Code skills
 
-If you're using Claude Code specifically (not just any LLM chat), two ready-to-use Skills live in
+If you're using Claude Code specifically (not just any LLM chat), three ready-to-use Skills live in
 `skills/`:
 
+- **`skills/job-search-setup/`** — interviews you one question at a time and builds your career
+  file and application log. This is the recommended way to start. Chats without skills can use
+  `docs/guided-setup-prompt.md` instead.
 - **`skills/job-fit-analysis/`** — formalizes the "fetch the real posting, check it against my
   facts, give me an honest tier" workflow described in the README quick start, so it triggers automatically whenever
   a job posting comes up in conversation instead of depending on you remembering to ask for it

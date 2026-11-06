@@ -1,8 +1,8 @@
 # Job Search Toolkit
 
 Template files for job-searching with an LLM without it overclaiming, underclaiming, or drifting
-away from what is actually true about your career. Everything here works with any LLM chat. Two
-optional Claude Code skills are included.
+away from what is actually true about your career. Everything here works with any LLM chat. Three
+Claude Code skills are included.
 
 ## Why this exists
 
@@ -15,35 +15,25 @@ purpose, plus a separate log for judging opportunities against it.
 
 ## Quick start
 
-Do these in order. The first two steps take real time, because they are the part everything
-else depends on. Expect an hour or two.
+Do these in order. Expect about an hour. The setup interview is the part everything else
+depends on.
 
-1. **Get the files.** Clone this repo or download it. You need two files to start:
-   `career_context_template.md` and `application_log_template.md`.
-2. **Gather everything you have written about your work into one folder, then build your career
-   file from it.** Do not start from a blank page. Put in every resume version, every cover
-   letter, your LinkedIn export, performance reviews, and project write-ups. Cover letters count:
-   they show your voice. Old documents are evidence, not truth, because they often overclaim and
-   disagree with each other, so the prompt below makes you confirm every claim. If you use a
-   chat, paste the files in. If you use a tool that can read a folder, point it at the folder.
-
-   ```
-   I am job searching and want a source-of-truth file about my career, so that nothing you
-   write for me overclaims. The folder (or text below) holds all my resumes, cover letters and
-   notes. Draft my career file using the structure in career_context_template.md. Then do two
-   things. First, go through every accomplishment claim one at a time: show me the claim, say
-   which documents it came from, point out where versions disagree, and ask me to confirm it,
-   correct it, or cut it. Do not add anything I have not confirmed. Second, read my cover
-   letters and write a short note describing how I write: sentence length, tone, and words I
-   avoid.
-   ```
-
-   Save the result as your own `career_context.md`.
-3. **Fill in your search constraints.** Open `application_log_template.md` and complete the
-   constraint table: pay floor, location, schedule, and the rest.
-4. **Try it on one posting.** Give your LLM both files and a job posting. Ask it to tier the role
-   (GOOD, STRETCH or PASS) and to say which requirements you meet, which are a real stretch, and
-   which are gaps.
+1. **Get the files.** Clone this repo or download it.
+2. **Gather everything you have written about your work into one folder.** Every resume version,
+   every cover letter, your LinkedIn export, performance reviews, project write-ups. Do not start
+   from a blank page. Cover letters count, because they show your voice. Old documents are
+   evidence, not truth: they often overclaim and disagree with each other, which is why the next
+   step makes you confirm every claim.
+3. **Run the guided setup.** It interviews you one question at a time and writes your two files.
+   - **Claude Code:** copy `skills/job-search-setup/` into `~/.claude/skills/`, then say "set up my
+     job search" and point it at your folder.
+   - **Any other chat:** open [`docs/guided-setup-prompt.md`](docs/guided-setup-prompt.md), paste the
+     prompt, then paste in your documents.
+   - **Prefer to fill in the templates yourself?** Open `career_context_template.md` and
+     `application_log_template.md` and follow the instructions at the top of each.
+4. **Try it on one posting.** The setup ends with this. Later, give your LLM both files and any
+   posting, and ask it to tier the role (GOOD, STRETCH or PASS) and to say which requirements you
+   meet, which are a stretch, and which are gaps.
 5. **Fix errors at the source.** When a draft gets a fact wrong, correct it in your career file
    right away, so the same mistake does not come back.
 
@@ -59,6 +49,7 @@ That is the whole core toolkit.
 | `body_text_signals_template.md` | The phrases and red flags that tell your sweep what a posting is really about, so it reads bodies and not only titles. | Optional, with the sweep |
 | `search_lanes_template.md` | Methods for searching posting text directly, and for boards that return titles only. | Optional, with the sweep |
 | `sweep_changelog_template.md` | A format for recording why your search methods changed, with examples. | Optional, with the sweep |
+| `skills/job-search-setup/` | A Claude Code skill that interviews you and builds your two files. The paste-in version for other chats is `docs/guided-setup-prompt.md`. | Recommended |
 | `skills/job-fit-analysis/` | A Claude Code skill: fetch the real posting, check it against your facts, give an honest tier. | Optional, Claude Code |
 | `skills/interview-prep-builder/` | A Claude Code skill: build interview questions and talking points from your career file. | Optional, Claude Code |
 
