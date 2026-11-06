@@ -31,6 +31,12 @@ together.
   GOOD/STRETCH/PASS evaluation framework with hard filters that never flex regardless of time
   pressure, and a phase-based structure for deciding, on purpose, when to widen your criteria as
   a timeline compresses — instead of that happening unconsciously as pressure builds.
+- **`body_text_signals_template.md`**, **`search_lanes_template.md`** and
+  **`sweep_changelog_template.md`** — the body-text layer for the sweep. Titles in most fields are
+  unreliable, so these files tell the agent which phrases to look for inside a posting (and which
+  red flags to downgrade for), how to search posting text on boards where that is possible, and
+  how to keep a changelog of why the search methods changed. Optional, but this is where most of
+  the real matches turned up once the title scan stopped finding new ones.
 - **`job_sweep_agent_template.md`** — a prompt template for a scheduled agent that reads the
   other two files and checks job boards for you on a recurring basis, applying your evaluation
   framework consistently instead of you re-deciding it under pressure at 11pm. Includes guidance
@@ -119,7 +125,10 @@ This is the full path from having nothing to having the whole system running, in
    each time.
 7. *(Optional)* Fill in `job_sweep_agent_template.md` and schedule it if you want an automated,
    recurring check of job boards on top of your own manual searching — not a replacement for it.
-8. *(Optional)* If you want sweep alerts delivered somewhere more reliable than a generic push
+8. *(Optional)* Once the sweep is running and titles stop turning up new matches, fill in
+   `body_text_signals_template.md` and `search_lanes_template.md` so it reads posting bodies, and
+   start a changelog from `sweep_changelog_template.md`.
+9. *(Optional)* If you want sweep alerts delivered somewhere more reliable than a generic push
    notification, wire in a messaging API per the notification-delivery section above — after
    weighing the tradeoff described there.
 

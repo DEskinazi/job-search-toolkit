@@ -145,6 +145,27 @@ Two things to build into the sweep if you use this approach:
 
 ---
 
+## SCREENING THE POSTING BODY, NOT JUST THE TITLE
+
+Titles in most fields are unreliable, and a title-only sweep fails in both directions. It misses
+real matches with off-vocabulary titles, and it passes along postings whose titles look right and
+whose bodies describe something else. Fix this by reading the body of every posting the sweep
+fetches.
+
+Two companion files do the work. Fill them in and keep them in the sweep's repo:
+
+- `body_text_signals_template.md` lists the phrases that mean your work (strong and supporting),
+  your red flags, and the rule for turning a phrase count into a candidate.
+- `search_lanes_template.md` lists methods for searching posting text directly, on boards whose
+  search covers full text, and for boards that return titles only.
+
+Two habits make this hold up. Match short acronyms as whole words only. Put method detail in
+those repo files, not in the prompt, so that changing a method is a commit and not a resend of the
+whole prompt. Record each change, with the reason, in your sweep changelog
+(`sweep_changelog_template.md`).
+
+---
+
 ## THE PROMPT
 
 ```
@@ -186,6 +207,11 @@ GOAL: Find currently LIVE postings matching the criteria in [career_context_temp
 4. DON'T RE-LITIGATE SETTLED DECISIONS — maintain a running "known false positive / already
    passed / declined" list in the log so a posting that's already been reviewed and rejected
    doesn't get re-surfaced as new just because it's still technically live.
+5. BODY-TEXT SCREEN — for every posting fetched with a full body, read the body whatever the
+   title says, using [your body_text_signals file]. Report body-match candidates under their own
+   heading, apply the tier framework, and downgrade title matches whose bodies show red flags.
+   On each full pass also run the search lanes in [your search_lanes file], and list every board
+   that could only be scanned by title as "unscreened" in the day's entry.
 
 METHOD — prefer direct, structured sources over generic web search where possible:
 
