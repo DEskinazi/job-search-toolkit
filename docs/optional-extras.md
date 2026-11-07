@@ -1,6 +1,6 @@
 # Optional extras
 
-You do not need anything on this page to get value from the toolkit. The core is the two files in the README quick start. Come back here when you want more.
+You do not need anything on this page to get value from the toolkit. The core is the three files in the README quick start. Come back here when you want more.
 
 ## Claude Code skills
 
@@ -15,11 +15,11 @@ If you're using Claude Code specifically (not just any LLM chat), three ready-to
   a job posting comes up in conversation instead of depending on you remembering to ask for it
   every time.
 - **`skills/interview-prep-builder/`** — builds likely interview questions, answer structure, and
-  personalized talking points from your `career_context_template.md`, triggered automatically
+  personalized talking points from your `career_knowledge_base_template.yaml`, triggered automatically
   whenever an upcoming interview or screen is mentioned.
 
 To use either, copy the relevant folder into `~/.claude/skills/` (for every project) or a specific
-project's `.claude/skills/` directory, alongside your filled-in `career_context_template.md` and
+project's `.claude/skills/` directory, alongside your filled-in `career_knowledge_base_template.yaml` and
 `application_log_template.md`. Both skills are optional — everything they do can also be done by
 hand by following the README quick start, with any LLM.
 

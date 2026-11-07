@@ -1,7 +1,7 @@
 # Job Sweep Agent — Sample Config
 
-A template for a scheduled, recurring agent that reads your two files
-(`career_context_template.md` and `application_log_template.md`, both filled in) and checks job
+A template for a scheduled, recurring agent that reads your three files
+(`career_knowledge_base.yaml`, `llm_context.md` and `application_log.md`, all filled in) and checks job
 boards for you on its own, instead of you doing this search by hand every day.
 
 This is written as a prompt you'd hand to a scheduled agent — if you're using Claude Code, that's
@@ -19,7 +19,7 @@ Fill in every `[bracketed]` section. Delete this instructions block once you've 
 1. **Create a git repo** the agent can read from and write to — this is where it keeps its own
    memory of what it already found, so it doesn't re-report the same unchanged listing every
    run. A single markdown log file (dated entries, newest at the bottom) is enough.
-2. **Point the agent at your two filled-in template files** (or paste their contents directly
+2. **Point the agent at your three filled-in template files** (or paste their contents directly
    into this prompt — either works, but keeping them as separate files you can update
    independently is cleaner, since your evaluation framework will change less often than your
    target companies).
@@ -186,7 +186,7 @@ connectivity to a couple of plain URLs. If blocked, flag "NETWORK BLOCKED" promi
 top of today's log entry, fall back to a broader web search, and mark every finding
 lower-confidence rather than treating this as a normal run.
 
-GOAL: Find currently LIVE postings matching the criteria in [career_context_template.md] and
+GOAL: Find currently LIVE postings matching the criteria in [career_knowledge_base.yaml and llm_context.md] and
 [application_log_template.md] (attach or paste both). Specifically:
 
 1. TITLE MATCHING — don't rely on exact keyword matching alone, in either direction:
@@ -270,3 +270,18 @@ the date you added it, why, and a date to come back and check whether it actuall
 anything worth having versus just adding noise. If it didn't earn its keep, narrow back down.
 Tier 2 / shared-vocabulary titles (see BUILDING YOUR TARGET TITLE LIST) are the likeliest to
 add noise rather than matches — put a firm review date on each one and be willing to cut it.
+
+## UNCONFIRMED FACTS
+
+If a candidate posting depends on a fact marked UNCONFIRMED in the user's files, do not tier above
+STRETCH and do not assume the answer. List the item under the posting as "needs your answer:
+[the item]" so the user can confirm it. An unattended run cannot ask a question, so it records the
+question for the next time the user is present. Never change the user's files yourself.
+
+## SCHEDULE AND BOARDS (filled in during setup)
+
+- **Runs on:** [days and times, and time zone, as the user chose, for example weekdays 8:00am Pacific]
+- **Where results go:** [a file in this folder, or a message]
+- **Employer boards to read:** `ats_boards.txt` (one per line: system, board name). Employers with no
+  public feed are listed under "check by hand" and are not searched automatically.
+- **Searched by title only:** [job sites such as LinkedIn or Indeed, if the user uses them]

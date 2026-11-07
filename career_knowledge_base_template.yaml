@@ -1,0 +1,102 @@
+# CAREER KNOWLEDGE BASE: [YOUR NAME]
+#
+# This is the source of truth for your career facts. Every fact is a small, specific field, so
+# you can see exactly which one changed and when. Your briefing file, `llm_context.md`, is
+# written FROM this file. Change a fact here first, then update the briefing. Never fix a fact
+# only in a resume or only in the briefing.
+#
+# Rules for every field:
+# 1. Write only what you have confirmed yourself. Old resumes are evidence, not truth.
+# 2. Put corrections right next to the fact, with a date and the reason. A bare fix lets the
+#    wrong version creep back. Example:
+#      title_note: >
+#        CONFIRMED [date]: this is the payroll title. A more descriptive title in earlier
+#        drafts implied scope you did not have. Use this exact title everywhere.
+# 3. Mark anything unsure as UNCONFIRMED. Do not guess a number or upgrade a verb.
+# 4. Say who did what. For each accomplishment, fill in `your_role` with owned, led, or
+#    contributed, and name the people or teams around you.
+#
+# Delete these instructions once you have read them. Fill in every [bracketed] value.
+
+identity:
+  name: [Your name, as you want it on documents]
+  role: [One line: what you actually do, in your own words]
+  core_focus:
+    - [focus area]
+    - [focus area]
+  professional_summary: >
+    [2 to 4 plain sentences. Not a resume summary. Avoid buzzwords you cannot back with an example.]
+
+work_experience:
+
+  current_role:
+    title: [Exact payroll or official title]
+    title_note: >
+      [CONFIRMED or CORRECTED, date, and why. Delete if there is nothing to note.]
+    company: [Company]
+    location: [City, or remote]
+    status: [current | concluded]
+    dates: [Month Year - Month Year, or Present]
+    status_note: >
+      [If concluded: the end date, and what you can claim as finished versus work that continues
+      without you. This keeps resume tense honest.]
+    scope:
+      - [what you really spent your time on, not job-description bullets]
+    exclusions:
+      - does NOT [something adjacent to your work that is not yours. Be specific.]
+    key_systems:
+      [system_name]:
+        what: >
+          [Plain description of what it was and how it worked. Before and after, if there is one.]
+        your_role: [owned | led | contributed]
+        collaborators: [who else did what around you]
+        scale: [how many people, teams, pages or dollars]
+        number_source: [where each number comes from, and whether it is confirmed or an estimate]
+        do_not_claim: >
+          [What a reader might assume you did that you did not. What belongs to someone else.]
+        corrections: >
+          [Earlier drafts said X. That was wrong because Y. The correct version is Z. Dated.]
+
+  previous_roles:
+    - title: [Title]
+      company: [Company]
+      dates: [Dates]
+      scope:
+        - [real focus areas]
+      key_systems: {}   # same fields as above, one entry per accomplishment worth citing
+      notes: >
+        [Older roles often hold the cleanest evidence for an adjacent-domain argument. Keep them.]
+
+core_patterns:
+  - [A theme that shows up across roles, in plain words]
+
+skills:
+  strong:
+    - name: [skill]
+      evidence: [the real example behind it]
+  working:
+    - name: [skill]
+      evidence: [what you have actually done with it]
+  limited:
+    - name: [skill]
+      honest_note: [say it plainly, for example "used it, have not built with it"]
+
+gaps:
+  # Requirements that show up in postings you want and that you do not fully meet.
+  # Each is one of: has_it_under_another_label | adjacent_narrower_version | genuinely_missing
+  - requirement: [as postings word it]
+    type: [one of the three above]
+    honest_statement: [one sentence you could say if asked]
+
+language_rules:
+  use:
+    - "[verb]: [what it means you did, for example designed = you owned the decisions]"
+  avoid:
+    - "[phrase that implies authority or ownership you do not have]"
+
+style_preferences:
+  - [anything true for every document, for example "no em dashes"]
+
+constraints:
+  # Private facts that affect evaluation. Keep this file out of anything public.
+  - [for example: no relocation, remote or hybrid only]

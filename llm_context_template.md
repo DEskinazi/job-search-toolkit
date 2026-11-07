@@ -1,4 +1,11 @@
-# PROFESSIONAL CONTEXT: [YOUR NAME]
+# PROFESSIONAL CONTEXT (LLM BRIEFING): [YOUR NAME]
+
+This is the briefing version of your career facts. Keep it a readable briefing, with a short
+block of hard rules at the top and the story told in prose below it. Do not shrink it to a list of
+rules. An LLM given only rules writes stiffly, and one given the story writes like you. The source of truth is
+`career_knowledge_base.yaml`, where each fact is a small field with its own dated corrections.
+This file is written from it, in flowing prose, so an LLM can write naturally from it. When a
+fact changes, fix the YAML first, then update this file to match.
 
 This document is a structured, fact-checked representation of your professional experience,
 scope, and boundaries. Feed this to an LLM as authoritative context for any generation task
@@ -58,7 +65,7 @@ Fill in every `[bracketed]` section. Delete this instructions block once you've 
 
    The date and the *why* both matter, not just the corrected value — a bare fix invites the
    same wrong version to quietly resurface later; the annotation is what stops that.
-5. **Pair this file with `application_log_template.md`** (see that file's own instructions) —
+5. **Pair these files with `application_log_template.md`** (see that file's own instructions) —
    this file is about *you*; the other file is about *the opportunities you're evaluating*.
    Keep them separate. Don't let company-specific tailoring notes creep into this file, and
    don't let your core facts get duplicated/drift out of sync across multiple application logs.
@@ -152,8 +159,8 @@ either "I have this" or "I don't have this." Most real gaps are actually one of 
    verbatim in your history — but also don't claim a *specific* sub-practice (e.g., "ran sprint
    retros") unless you actually did that specific thing.
 2. **You have an adjacent, narrower version of it.** A posting wants "life sciences
-   experience" — you don't have a pharma job, but you did a competitive-intelligence contract
-   researching drugs in development. That's a real, honest bridge — name it as what it is,
+   experience" — you have never worked in a hospital, but you spent two years building training
+   and documentation for the staff of a medical clinic. That's a real, honest bridge — name it as what it is,
    don't round it up to the full requirement.
 3. **You genuinely don't have it, and that's worth saying plainly.** Not every gap needs a
    bridge. Naming a real gap directly, in one honest sentence, usually reads better than

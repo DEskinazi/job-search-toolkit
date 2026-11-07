@@ -2,7 +2,7 @@
 
 Tracks in-progress applications with rate and intangibles for comparison. This file is for
 *evaluating and comparing opportunities* — it is not where your career facts live. See
-`career_context_template.md` for that; read its own setup instructions first if you haven't.
+`career_knowledge_base_template.yaml` for that; read its own setup instructions first if you haven't.
 
 **Why two separate files:** career facts stay true regardless of what job you're looking at, and
 change slowly. Opportunity evaluations are specific to a single posting, change fast (a posting
@@ -82,13 +82,28 @@ posting into a tier, instead of re-deciding the criteria fresh for every single 
 2. [Your second true non-negotiable — usually a pay floor below which the role doesn't solve
    the actual problem you're trying to solve, regardless of how appealing it is otherwise]
 
+**Revisit triggers (when a hard filter is allowed to change):** A hard filter is firm today, not
+forever. For each one, write down the date or event that lets you reopen it, and who decides
+(you, with a partner or advisor). Example: "Pay floor is [amount] until [date] or until savings fall
+below [amount]; then I reopen it and set a new floor in writing." Change a filter only at a
+trigger, and record the change and the date in the log. That keeps a lower floor a decision you
+made on purpose, not pressure.
+
+| Filter | Firm until | Reopen when | New value (fill in at the trigger) |
+|---|---|---|---|
+| [Pay floor] | [date] | [event: runway under X months, benefits end, no interviews after Y weeks] | [  ] |
+| [Second filter] | [date] | [event] | [  ] |
+
 **GOOD opportunity:** Scope is a genuine match to your real experience. Title is in your
-calibration zone. Pay is disclosed and reasonable, or the company is large/stable enough that
-undisclosed pay isn't itself a red flag. No red-flag culture language in the posting itself.
+calibration zone. Pay is posted and clears your floor. If pay is not posted, the role is "pay
+unconfirmed" and can be at most STRETCH until you learn the number. (Optional exception, only if
+you choose it: a very large, stable employer may stay GOOD without posted pay. Large employers
+still lay people off, so many people skip this exception.) No red-flag culture language in the
+posting itself.
 
 **STRETCH opportunity:** A real reach on title, scope, or a specific named qualifications gap —
 but one you can honestly address rather than gloss over (see the gap-scrutiny section in
-`career_context_template.md`). Worth applying, but go in knowing exactly what the stretch is.
+`career_knowledge_base_template.yaml`). Worth applying, but go in knowing exactly what the stretch is.
 
 **PASS:** Culture red flags in the posting's own language (name your own trigger phrases here
 as you notice them — e.g., "the bar is high," "not for the faint of heart," anything that reads
@@ -132,7 +147,7 @@ Copy this block for each opportunity you're tracking:
 - **Rate:** [pay range if disclosed, and how it compares to your comp anchor above]
 - **Tier:** [GOOD / STRETCH / PASS, with the one-line reason why]
 - **Known real gaps, addressed honestly, not glossed over:** [name them — this is where the
-  gap-scrutiny thinking from career_context_template.md actually gets applied to a specific
+  gap-scrutiny thinking from career_knowledge_base_template.yaml actually gets applied to a specific
   posting]
 - **Documents:** [where the tailored resume/cover letter for this one live]
 ```

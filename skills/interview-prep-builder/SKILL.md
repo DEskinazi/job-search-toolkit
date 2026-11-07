@@ -16,7 +16,7 @@ Part of the [Job Search Toolkit](../../README.md).
 
 ## Step 1 — read your source-of-truth file fresh
 
-Same file as job-fit-analysis: your filled-in `career_context_template.md`. Read it fresh every
+Same file as job-fit-analysis: your filled-in `career_knowledge_base_template.yaml`. Read it fresh every
 time, not from memory of an earlier session — corrections land in this file as you catch them
 (a misattributed "led" vs. "participated in," a dropped collaborator credit, a corrected
 ownership story), and prep built on a stale understanding can put an inaccurate claim in your own
@@ -51,3 +51,14 @@ If a likely question doesn't have real, verified supporting experience behind it
 instead of writing a plausible-sounding sample answer. The honest answer — "this is a real gap,
 here's the closest true story to bridge it with" — holds up better in the room than a fabricated
 one that falls apart under a follow-up question.
+
+
+## Clarify unconfirmed facts as you go
+
+If the posting or application depends on anything marked UNCONFIRMED in the user's files (a number,
+a date, a skill level, a title, who owned a piece of work), stop and ask only about that item
+before you tier, draft or advise. Say which item, why this application needs it, and offer
+"still not sure" as an answer. After they answer, update the one field in
+`career_knowledge_base.yaml` with a dated CONFIRMED note, then update the matching line in
+`llm_context.md`, then continue. If they are still unsure, leave it UNCONFIRMED and leave the claim
+out of anything you write. Never fill the gap with a guess or a rounded number.

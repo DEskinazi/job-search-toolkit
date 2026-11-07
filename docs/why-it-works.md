@@ -19,9 +19,9 @@ together.
 
 ## You don't need the automated agent to get value from this
 
-The first two files are useful entirely on their own, with zero automation. A common real case:
+The first three files are useful entirely on their own, with zero automation. A common real case:
 you find a role yourself — scrolling LinkedIn, a friend sends a link, whatever — and want to
-tailor your resume to it quickly and accurately. Hand the LLM `career_context_template.md`
+tailor your resume to it quickly and accurately. Hand the LLM `career_knowledge_base_template.yaml` and `llm_context_template.md`
 (filled in) plus the job posting, and ask it to draft a tailored version and flag which stated
 requirements you genuinely meet, which are a real stretch worth naming honestly, and which don't
 apply. That's the whole workflow — no scheduled agent required. `job_sweep_agent_template.md` is
@@ -31,12 +31,12 @@ searching yourself, either. The real pattern this toolkit is built around is bot
 once: the agent works on a schedule (checking boards overnight, say, while you're not looking),
 and you keep searching manually too, on platforms and through channels (a recommendation feed,
 a friend's link, your own browsing) that an automated sweep structurally can't reach. Both feed
-the same two files, so either way, everything gets evaluated against the same standard.
+the same files, so either way, everything gets evaluated against the same standard.
 
 
 ## How the files work together
 
-`career_context_template.md` answers "what's actually true about me." `application_log_template.md`
+`career_knowledge_base_template.yaml` and `llm_context_template.md` answers "what's actually true about me." `application_log_template.md`
 answers "given what's true about me, does this specific opportunity make sense." `job_sweep_agent_template.md`
 reads both of the above and automates the ongoing search itself. Keep company-specific tailoring
 notes out of the first file, and keep your core facts out of the second — duplicating them risks

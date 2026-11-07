@@ -19,7 +19,7 @@ way whether or not you remember the checklist that day.
 
 ## Step 0 — read your source-of-truth file fresh
 
-Read your filled-in `career_context_template.md` **fresh, every time** — never reconstruct facts
+Read your filled-in `career_knowledge_base_template.yaml` **fresh, every time** — never reconstruct facts
 from an earlier conversation's summary or from a resume file found on disk. If you haven't filled
 that file in yet, do that first; this skill has nothing to check a posting against without it.
 
@@ -47,7 +47,7 @@ lead, not source material. Before doing anything else:
 
 Once the real JD is in hand, produce:
 
-- **Matched requirements** — specific, named facts from `career_context_template.md` that map
+- **Matched requirements** — specific, named facts from `career_knowledge_base_template.yaml` that map
   directly to specific JD requirements. Cite the actual achievement, not a generic paraphrase.
 - **Real gaps** — named plainly, not softened. Distinguish a genuine capability gap from a "same
   skill, different context" reframe (built internal operational systems repeatedly but never an
@@ -82,3 +82,14 @@ right at a stated threshold (e.g. "5+ years management" against real tenure of 4
 the recent pipeline is honest stretch/atypical-title applications (which convert at a structurally
 lower rate by design, not by flaw), and current employment status (an active "doing this work
 right now" signal some hiring managers weight that a between-jobs candidate doesn't have).
+
+
+## Clarify unconfirmed facts as you go
+
+If the posting or application depends on anything marked UNCONFIRMED in the user's files (a number,
+a date, a skill level, a title, who owned a piece of work), stop and ask only about that item
+before you tier, draft or advise. Say which item, why this application needs it, and offer
+"still not sure" as an answer. After they answer, update the one field in
+`career_knowledge_base.yaml` with a dated CONFIRMED note, then update the matching line in
+`llm_context.md`, then continue. If they are still unsure, leave it UNCONFIRMED and leave the claim
+out of anything you write. Never fill the gap with a guess or a rounded number.
